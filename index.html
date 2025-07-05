@@ -1,0 +1,458 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>NAVEENKUMAR</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400');
+
+    html,
+    body {
+        background: radial-gradient(#000000, #000000);
+        font-family: 'Source Code Pro', monospace;
+        font-weight: 400;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+    }
+
+    /* Profile Image */
+    .profile {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 3px solid #0f6;
+    }
+
+    /* Word styling */
+    .word1 {
+        position: relative;
+        color: #fff;
+        font-size: 2em;
+        line-height: 2.5em;
+        margin: 5px 0;
+        text-shadow: 0 0 10px rgba(50, 255, 50, 0.5), 0 0 5px rgba(100, 255, 100, 0.5);
+     }
+    .word2,
+    .word3 {
+        position: relative;
+        color: #fff;
+        font-size: 2em;
+        line-height: 2.5em;
+        margin: 5px 0;
+        text-shadow: 0 0 10px rgba(50, 255, 50, 0.5), 0 0 5px rgba(100, 255, 100, 0.5);
+        opacity: 0;
+    }
+
+    /* Word animations */
+    @keyframes in {
+        0% {
+            opacity: 0;
+        }
+
+        10% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    /* Span and done class for text animations */
+    .word1 span,
+    .word2 span,
+    .word3 span {
+        display: inline-block;
+        transform: translateX(100%) scale(0.9);
+        transition: transform 500ms;
+    }
+
+    .word1 .done,
+    .word2 .done,
+    .word3 .done {
+        color: #0f0;
+        transform: translateX(0) scale(1);
+    }
+
+    /* Default animation delays */
+    .word1 {
+        animation: in 65s infinite;
+        animation-delay: 0s; /* No delay here */
+        animation-fill-mode: forwards;
+    }
+    .word2 {
+        animation: in 65s infinite;
+        animation-delay: 4.4s;
+    }
+
+    .word3 {
+        animation: in 65s infinite;
+        animation-delay: 1.9s;
+    }
+
+    /* Social buttons */
+    .socialbuttons {
+        display: flex;
+        justify-content: center;
+        opacity: 0;
+        animation: in 65s infinite;
+        animation-delay: 26s;
+        margin-top: 10px;
+    }
+
+    /* Button styling */
+    .btn {
+        display: inline-block;
+        width: 90px;
+        height: 90px;
+        background: #000;
+        margin: 10px;
+        color: #0f0;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        font-size: 25px;
+        line-height: 2.2;
+        transition: 0.2s linear;
+    }
+
+    /* Home button */
+    .homebutton {
+        display: flex;
+        justify-content: center;
+        opacity: 0;
+        animation: in 65s;
+        animation-delay: 26s;
+    }
+
+    /* Home button icon */
+    .homebutton a {
+        font-size: 25px;
+        color: #0f0;
+    }
+
+    /* Responsiveness: Adjust sizes on mobile */
+    @media screen and (max-width: 768px) {
+        .word1,
+        .word2,
+        .word3 {
+            font-size: 1em;
+        }
+
+        .profile {
+            width: 150px;
+            height: 150px;
+        }
+
+        .btn {
+            width: 40px;
+            height: 40px;
+        }
+
+        /* Modify animation delays for mobile */
+        .word1 {
+            animation-delay: 0s; /* Ensures it starts without delay */
+        }
+        .word2 {
+            animation-delay: 4.4s;
+        }
+
+        .word3 {
+            animation-delay: 1.9s;
+        }
+
+        .socialbuttons {
+            animation-delay: 24s;
+        }
+    }
+
+</style>
+<body>
+    <div class="container">
+        <!-- Profile Image -->
+        <img src="src/img/nkround.png" alt="nk" class="profile">
+
+        <!-- WHOAMI (word1) -->
+        <div class="word1">
+            <span>WHOAMI</span>
+        </div>
+
+        <!-- NAVEEN KUMAR (word3) -->
+        <div class="word3">
+            <span>NAVEEN&nbsp;KUMAR</span>
+        </div>
+
+        <!-- Description (word2) -->
+        <div class="word2">
+            <span>I'm&nbsp;a&nbsp;Cyber&nbsp;Security&nbsp;Analyst&nbsp;and&nbsp;Web&nbsp;Application&nbsp;Penetration&nbsp;Tester.&nbsp;I&nbsp;have&nbsp;Achieved&nbsp;India&nbsp;2nd&nbsp;rank&nbsp;in&nbsp;Hackthebox&nbsp;and&nbsp;87th&nbsp;rank&nbsp;in&nbsp;Global&nbsp;(2022).&nbsp;I&nbsp;Have&nbsp;Secured&nbsp;Indian&nbsp;Government&nbsp;Websites&nbsp;and&nbsp;more&nbsp;Private&nbsp;Companies.&nbsp;Doing&nbsp;Bug&nbsp;bounty&nbsp;in&nbsp;Hackerone&nbsp;and&nbsp;Working&nbsp;at&nbsp;Ozone&nbsp;Cyber&nbsp;Security.&nbsp;My&nbsp;work&nbsp;involves&nbsp;both&nbsp;Hacking&nbsp;Web&nbsp;Application&nbsp;platforms&nbsp;and&nbsp;Securing&nbsp;them&nbsp;against&nbsp;Critical&nbsp;bugs&nbsp;and&nbsp;Malicious&nbsp;Attacks.</span>
+        </div>
+
+        <!-- Social buttons -->
+        <div class="socialbuttons">
+            <a class="btn" href="https://github.com/nkbeast" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a class="btn" href="https://twitter.com/naveenkumard47?lang=en" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a class="btn" href="https://www.instagram.com/ig.nk/?hl=en" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a class="btn" href="https://in.linkedin.com/in/naveenkumar-d-692b9027a?trk=people-guest_people_search-card" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a class="btn" href="https://youtube.com/@nkbeastyt?si=yzgC7qTkQ_kMo2f-" target="_blank">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Audio files -->
+    <audio id="acdc" src="src/audio/ironmanacdc.mp3" type="audio/mpeg"></audio>
+    <audio id="genius" src="src/audio/ironmangenius.mp3" type="audio/mpeg"></audio>
+
+    <!-- jQuery and animation scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"></script>
+
+<script>
+    function Ticker( elem ) {
+	elem.lettering();
+	this.done = false;
+	this.cycleCount = 30;
+	this.cycleCurrent = 0;
+	this.chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()-_=+{}|[]\\;\':"<>?,./`~'.split('');
+	this.charsCount = this.chars.length;
+	this.letters = elem.find( 'span' );
+	this.letterCount = this.letters.length;
+	this.letterCurrent = 0;
+
+	this.letters.each( function() {
+		var $this = $( this );
+		$this.attr( 'data-orig', $this.text() );
+		$this.text( '-' );
+	});
+}
+
+Ticker.prototype.getChar = function() {
+	return this.chars[ Math.floor( Math.random() * this.charsCount ) ];
+};
+
+Ticker.prototype.reset = function() {
+	this.done = false;
+	this.cycleCurrent = 0;
+	this.letterCurrent = 0;
+	this.letters.each( function() {
+		var $this = $( this );
+		$this.text( $this.attr( 'data-orig' ) );
+		$this.removeClass( 'done' );
+	});
+	this.loop();
+};
+
+Ticker.prototype.loop = function() {
+	var self = this;
+
+	this.letters.each( function( index, elem ) {
+		var $elem = $( elem );
+		if( index >= self.letterCurrent ) {
+			if( $elem.text() !== ' ' ) {
+				$elem.text( self.getChar() );
+				$elem.css( 'opacity', Math.random() );
+			}
+		}
+	});
+
+	if( this.cycleCurrent < this.cycleCount ) {
+		this.cycleCurrent++;
+	} else if( this.letterCurrent < this.letterCount ) {
+		var currLetter = this.letters.eq( this.letterCurrent );
+		this.cycleCurrent = 0;
+		currLetter.text( currLetter.attr( 'data-orig' ) ).css( 'opacity', 1 ).addClass( 'done' );
+		this.letterCurrent++;
+	} else {
+		this.done = true;
+	}
+	if( !this.done ) {
+    requestAnimationFrame(function () {
+        self.loop();
+    });
+}
+}
+$words = $( '.word1' );
+
+$words.each( function() {
+	var $this = $( this ),
+		ticker = new Ticker( $this ).reset();
+	$this.data( 'ticker', ticker  );
+});
+</script>
+<script>
+    function Ticker2( elem ) {
+	elem.lettering();
+	this.done = false;
+	this.cycleCount = 2;
+	this.cycleCurrent = 0;
+	this.chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()-_=+{}|[]\\;\':"<>?,./`~'.split('');
+	this.charsCount = this.chars.length;
+	this.letters = elem.find( 'span' );
+	this.letterCount = this.letters.length;
+	this.letterCurrent = 0;
+
+	this.letters.each( function() {
+		var $this = $( this );
+		$this.attr( 'data-orig', $this.text() );
+		$this.text( '-' );
+	});
+}
+
+Ticker2.prototype.getChar = function() {
+	return this.chars[ Math.floor( Math.random() * this.charsCount ) ];
+};
+
+Ticker2.prototype.reset = function() {
+	this.done = false;
+	this.cycleCurrent = 0;
+	this.letterCurrent = 0;
+	this.letters.each( function() {
+		var $this = $( this );
+		$this.text( $this.attr( 'data-orig' ) );
+		$this.removeClass( 'done' );
+	});
+	this.loop();
+};
+
+Ticker2.prototype.loop = function() {
+	var self = this;
+
+	this.letters.each( function( index, elem ) {
+		var $elem = $( elem );
+		if( index >= self.letterCurrent ) {
+			if( $elem.text() !== ' ' ) {
+				$elem.text( self.getChar() );
+				$elem.css( 'opacity', Math.random() );
+			}
+		}
+	});
+
+	if( this.cycleCurrent < this.cycleCount ) {
+		this.cycleCurrent++;
+	} else if( this.letterCurrent < this.letterCount ) {
+		var currLetter = this.letters.eq( this.letterCurrent );
+		this.cycleCurrent = 0;
+		currLetter.text( currLetter.attr( 'data-orig' ) ).css( 'opacity', 1 ).addClass( 'done' );
+		this.letterCurrent++;
+	} else {
+		this.done = true;
+	}
+	if( !this.done ) {
+    requestAnimationFrame(function () {
+        self.loop();
+    });
+}
+}
+setTimeout(function(){
+$words = $( '.word2' );
+
+$words.each( function() {
+	var $this = $( this ),
+		ticker2 = new Ticker2( $this ).reset();
+	$this.data( 'ticker2', ticker2  );
+});
+}, 4500)
+</script>
+<script>
+    function Ticker3( elem ) {
+	elem.lettering();
+	this.done = false;
+	this.cycleCount = 15;
+	this.cycleCurrent = 0;
+	this.chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()-_=+{}|[]\\;\':"<>?,./`~'.split('');
+	this.charsCount = this.chars.length;
+	this.letters = elem.find( 'span' );
+	this.letterCount = this.letters.length;
+	this.letterCurrent = 0;
+
+	this.letters.each( function() {
+		var $this = $( this );
+		$this.attr( 'data-orig', $this.text() );
+		$this.text( '-' );
+	});
+}
+
+Ticker3.prototype.getChar = function() {
+	return this.chars[ Math.floor( Math.random() * this.charsCount ) ];
+};
+
+Ticker3.prototype.reset = function() {
+	this.done = false;
+	this.cycleCurrent = 0;
+	this.letterCurrent = 0;
+	this.letters.each( function() {
+		var $this = $( this );
+		$this.text( $this.attr( 'data-orig' ) );
+		$this.removeClass( 'done' );
+	});
+	this.loop();
+};
+
+Ticker3.prototype.loop = function() {
+	var self = this;
+
+	this.letters.each( function( index, elem ) {
+		var $elem = $( elem );
+		if( index >= self.letterCurrent ) {
+			if( $elem.text() !== ' ' ) {
+				$elem.text( self.getChar() );
+				$elem.css( 'opacity', Math.random() );
+			}
+		}
+	});
+
+	if( this.cycleCurrent < this.cycleCount ) {
+		this.cycleCurrent++;
+	} else if( this.letterCurrent < this.letterCount ) {
+		var currLetter = this.letters.eq( this.letterCurrent );
+		this.cycleCurrent = 0;
+		currLetter.text( currLetter.attr( 'data-orig' ) ).css( 'opacity', 1 ).addClass( 'done' );
+		this.letterCurrent++;
+	} else {
+		this.done = true;
+	}
+	if( !this.done ) {
+    requestAnimationFrame(function () {
+        self.loop();
+    });
+}
+}
+setTimeout(function(){
+$words = $( '.word3' );
+
+$words.each( function() {
+	var $this = $( this ),
+		ticker3 = new Ticker3( $this ).reset();
+	$this.data( 'ticker3', ticker3  );
+});
+}, 2000)
+setTimeout(function(){
+    document.getElementById("acdc").play();
+}, 5000);
+setTimeout(function(){
+    document.getElementById("genius").play();
+}, 1000);
+</script>
+</body>
