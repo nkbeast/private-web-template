@@ -96,12 +96,12 @@
     }
     .word2 {
         animation: in 65s infinite;
-        animation-delay: 4.4s;
+        animation-delay: 7s;
     }
 
     .word3 {
         animation: in 65s infinite;
-        animation-delay: 1.9s;
+        animation-delay: 3.5s;
     }
 
     /* Social buttons */
@@ -168,11 +168,11 @@
             animation-delay: 0s; /* Ensures it starts without delay */
         }
         .word2 {
-            animation-delay: 4.4s;
+            animation-delay: 7s;
         }
 
         .word3 {
-            animation-delay: 1.9s;
+            animation-delay: 3.5s;
         }
 
         .socialbuttons {
@@ -184,7 +184,7 @@
 <body>
     <div class="container">
         <!-- Profile Image -->
-        <img src="src/img/nkround-min.png" alt="nk" class="profile">
+        <img src="src/img/nkround.png" alt="nk" class="profile">
 
         <!-- WHOAMI (word1) -->
         <div class="word1">
@@ -198,7 +198,8 @@
 
         <!-- Description (word2) -->
         <div class="word2">
-            <span>I'm&nbsp;a&nbsp;Cyber&nbsp;Security&nbsp;Analyst&nbsp;and&nbsp;Web&nbsp;Application&nbsp;Penetration&nbsp;Tester.&nbsp;I&nbsp;have&nbsp;Achieved&nbsp;India&nbsp;2nd&nbsp;rank&nbsp;in&nbsp;Hackthebox&nbsp;and&nbsp;87th&nbsp;rank&nbsp;in&nbsp;Global&nbsp;(2022).&nbsp;I&nbsp;Have&nbsp;Secured&nbsp;Indian&nbsp;Government&nbsp;Websites&nbsp;and&nbsp;more&nbsp;Private&nbsp;Companies.&nbsp;Doing&nbsp;Bug&nbsp;bounty&nbsp;in&nbsp;Hackerone&nbsp;and&nbsp;Working&nbsp;at&nbsp;Ozone&nbsp;Cyber&nbsp;Security.&nbsp;My&nbsp;work&nbsp;involves&nbsp;both&nbsp;Hacking&nbsp;Web&nbsp;Application&nbsp;platforms&nbsp;and&nbsp;Securing&nbsp;them&nbsp;against&nbsp;Critical&nbsp;bugs&nbsp;and&nbsp;Malicious&nbsp;Attacks.</span>
+            <span>I'm&nbsp;a&nbsp;Cyber&nbsp;Security&nbsp;Analyst&nbsp;specializing&nbsp;in&nbsp;red&nbsp;teaming,&nbsp;with&nbsp;expertise&nbsp;in&nbsp;conducting&nbsp;VAPT&nbsp;across&nbsp;web&nbsp;applications,&nbsp;mobile&nbsp;platforms,&nbsp;cloud&nbsp;environments,&nbsp;and&nbsp;networks.&nbsp;I&nbsp;have&nbsp;Achieved&nbsp;India&nbsp2nd&nbsp;rank&nbsp;in&nbsp;Hackthebox&nbsp;and&nbsp;87th&nbsp;rank&nbsp;in&nbsp;Global&nbsp(2022).&nbsp;I&nbsp;Have&nbsp;Secured&nbsp;NASA&nbsp;and&nbsp;more&nbsp;Private&nbsp;Companies.&nbsp;Adept&nbsp;at&nbsp;strengthening&nbsp;security&nbsp;posture&nbsp;through&nbsp;offensive&nbsp;security&nbsp;techniques.
+            </span>
         </div>
 
         <!-- Social buttons -->
@@ -369,7 +370,7 @@ $words.each( function() {
 		ticker2 = new Ticker2( $this ).reset();
 	$this.data( 'ticker2', ticker2  );
 });
-}, 4500)
+}, 7300)
 </script>
 <script>
     function Ticker3( elem ) {
@@ -443,12 +444,6 @@ $words.each( function() {
 		ticker3 = new Ticker3( $this ).reset();
 	$this.data( 'ticker3', ticker3  );
 });
-}, 2000)
-setTimeout(function(){
-    document.getElementById("acdc").play();
-}, 5000);
-setTimeout(function(){
-    document.getElementById("genius").play();
-}, 1000);
+}, 3600);
 </script>
 </body>
